@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+
+* {
+    margin: 0; /* Recet. márgenes de toda la pág. a 0 */
+    box-sizing: border-box; /* Calcula auto// el paddin, margin y border */
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+.history {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    padding-bottom: 0;
+}
+.img_history {
+    height: 400px;
+    width: 820px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.history-title {
+    font-family: 'Stalemate', cursive;
+    font-weight: bold;
+    font-size: 80px;
+}
+.history-coment {
+    font-size: 20px;
+    padding: 0 45px;
+}
+.history-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+/* ---------- Mediaqueris tablets ---------- */
+@media (max-width: 1259px) {
+    .img_history {
+        height: auto;
+        width: 100%;
+        max-width: 550px;
+    }
+}

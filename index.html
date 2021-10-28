@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Palanca</title>
+    <link rel="icon" href="img/logo-icon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Se agregan íconos de fuente externa -->
+    <script src="https://kit.fontawesome.com/07c62f8548.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="index">
+    <header>
+        <div class="logo-box">
+            <img class="logo-img" src="/img/logo.png" alt="Logo La Palanca">
+            <div class="logo-name">La Palanca</div>
+        </div>
+        <nav>
+            <ul class="navbar-menu">
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link navbar-menu-link_active" href="/index.html">INICIO</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/history.html">CERVECERÍA</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/products.html">NUESTRAS CERVEZAS</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/tour.html">DEGUSTACIONES</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/visit.html">VISÍTENOS</a></li>
+            </ul>
+        </nav>
+        <button class="home-toggle navbar-menu-link_active">
+            <a href="/index.html"><i class="fas fa-home"></i></a>
+        </button>
+        <button class="history-toggle">
+            <a href="/history.html"><i class="fas fa-book"></i></a>
+        </button>
+        <button class="beer-toggle">
+            <a href="/products.html"><i class="fas fa-beer"></i></a>
+        </button>
+        <button class="tour-toggle">
+            <a href="/tour.html"><i class="fas fa-glass-cheers"></i></a>
+        </button>
+        <button class="visit-toggle">
+            <a href="/visit.html"><i class="fas fa-user-friends"></i></a>
+        </button>
+        <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    
+    <!-- Main Start -->
+    <main>
+        <picture class="grupo__a">
+            <img class="img-grupo__a" src="/img/barrel_index.png" alt="Barril">
+        </picture>
+        <section class="grupo__b">
+            <picture>
+                <img class="img-grupo__b" src="/img/amigos.png" alt="Amigos">
+            </picture>
+            <div class="text-grupo__b">
+                <p>Desde nuestros comienzos, esta gran pasión por la cerveza crece cada día un poquito más y todo esto te los debemos a vos y a esos tantos momentos que compartes con nosotros. Por eso, en mombre de todo el equipo de <span class="history-name">La Palanca</span> queremos decirte: <br>
+                <span class="history-title">!Gracias por elegirnos día tras día¡</span></p>
+            </div>
+        </section>
+        <section class="grupo__c">
+            <div class="text-grupo__c">
+                <p>Hoy queremos levantar nuestras pintas en alto y brindar por vos, por nosotros y por todas esas historias que nacen cada día en compañía de buena cerveza y seres queridos. <br>
+                Por todo eso y mucho, mucho más... <br> <span class="history-title">Salud!!!</span></p>
+            </div>
+            <img class="img-grupo__c" src="/img/brindando.png" alt="Brindis">
+        </section>
+    </main>
+    <!-- Main End -->
+    
+    <footer id="idfooter"></footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>

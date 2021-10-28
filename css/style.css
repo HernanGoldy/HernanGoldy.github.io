@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+
+* {
+    margin: 0; /* Recet. márgenes de toda la pág. a 0 */
+    box-sizing: border-box; /* Calcula auto// el paddin, margin y border */
+}
+.index {
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0 0;
+    transition: 0.5s;
+}
+
+
+/* ---------- Header ---------- */
+header {
+    background: #1B1E1F;
+    display: flex; /* Ubica los elem. de forma horizontal */
+    justify-content: space-between; /* Lleva el contenido a ambos mérgenes del elem. */
+    height: 100px;
+    position: fixed; /* Queda fijo arriba al hacer scroll */
+    z-index: 1;
+    width: 100%; /* Ocupa todo el ancho de la pág. */
+    padding: 0 60px;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.logo-img {
+    height: 80px;
+    width: 80px;
+    margin: 2px 0 0 0;
+    transition: 0.5s;
+}
+.logo-box {
+    display: flex;
+    margin: 0;
+    width: 250px;
+    transition: 0.5s;
+}
+.logo-name {
+    color: #D1CDC7;
+    font-size: 25px;
+    font-weight: 700; /* Elegimos el grosor de la fuente */
+    line-height: 100px; /* Centra el elem. en el eje vertical */
+    width: max-content; /* Evita que el texto de desplace hacia abajo */
+    transition: 0.5s;
+}
+.navbar-menu {
+    display: flex;
+    list-style: none; /* Quita los puntos (items) de las listas */
+    max-width: 1400px; /* P/q quede centrado horizon// en la pantalla */
+    margin: 0 auto;
+    transition: 0.5s;
+}
+.navbar-link {
+    color: white;
+    text-decoration: none; /* Quita la línea del enlace */
+    transition: 0.5s;
+}
+.navbar-menu-item {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 5px; /* Se añade margen entre los items */
+    line-height: 100px;
+    width: max-content;
+    transition: 0.5s;
+}
+.navbar-menu-link {
+    color: #D1CDC7;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px; /* Redondea las esquinas del borde */
+}
+.navbar-menu-link:hover,
+.navbar-menu-link_active { /* :hover -> Al colocar el puntero sobre el elem... */
+    background-color: #334756;
+    transition: 0.5s; /* Tiempo (segundos) de retardo en mostrar la animación */
+}
+.nav-toggle, .beer-toggle, .visit-toggle,
+.history-toggle, .tour-toggle, .home-toggle {
+    background: none; /* Ocultamos el relleno */
+    border: none; /* Ocultamos el borde */
+    font-size: 25px;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    display: none; /* Ocultamos el elem. en pantalla de escritorio */
+    cursor: pointer; /* Cambia el puntero sobre el elem. */
+    transition: 0.5s;
+}
+.visit-toggle {
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    margin: 17px 0;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-toggle:hover, .beer-toggle:hover, .visit-toggle:hover,
+.history-toggle:hover, .tour-toggle:hover, .home-toggle:hover, .navbar-menu-link_active {
+    background-color: #334756;
+    border-radius: 5px;
+    transition: 0.05s;
+}
+
+
+/* ---------- Main ---------- */
+.img-grupo__a {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 0;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.grupo__b, .grupo__c {
+    display: flex;
+}
+.img-grupo__b,
+.img-grupo__c {
+    height: 430px;
+    margin: 10px 15px;
+    border-radius: 5px;
+}
+.text-grupo__b,
+.text-grupo__c {
+    padding: 25px;
+}
+.history-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.history-title {
+    font-family: 'Stalemate', cursive;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+
+/* ---------- Mediaqueris tablets ---------- */
+@media (max-width: 1259px) {
+    body {
+        margin-top: -20px;
+        padding: 80px 0;
+        transition: 0.5s;
+    }
+    header {
+        height: 80px;
+        padding: 0 0 0 10px;
+        transition: 0.5s;
+    }
+    .logo-img {
+        height: 65px;
+        width: 65px;
+        margin: 2px 0 0 0;
+    }
+    .logo-box {
+        display: flex;
+        margin: 0;
+        width: 200px;
+    }
+    .logo-name {
+        font-size: 20px;
+        font-weight: 700; /* Elegimos el grosor de la fuente */
+        line-height: 80px; /* Centra el elem. en el eje vertical */
+        width: max-content; /* Evita que el texto de desplace hacia abajo */
+    }
+    .navbar-menu-item {
+        display: none;
+    }
+    .visit-toggle, .beer-toggle,
+    .history-toggle, .tour-toggle, 
+    .home-toggle {
+        display: block;
+        margin: 17px 50px 0 50px;
+        transition: 0.5s;
+    }
+    .fas {
+        color: #D1CDC7;
+    }
+    .grupo__b {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .grupo__c {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+    .img-grupo__b,
+    .img-grupo__c {
+        height: auto;
+        width: 100%;
+        max-width: 750px;
+        min-width: 250px;
+    }
+}
+
+
+/* ---------- Mediaqueris tablets ---------- */
+@media (max-width: 1259px) {
+}
+
+
+/* ---------- Mediaqueris disp. móviles ---------- */
+@media (max-width: 900px) {
+    .nav-toggle {
+        display: block;
+        margin: 17px 50px 0 50px;
+        transition: 0.5s;
+    }
+    .visit-toggle, .beer-toggle,
+    .history-toggle, .tour-toggle,
+    .home-toggle {
+        display: none;
+        transition: 0.5s;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        background-color: #334756;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+
+        height: calc(100% - 80px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .navbar-menu-item {
+        display: flex;
+        line-height: 70px;
+    }
+    .navbar-menu-link:hover,
+    .navbar-menu-link_active {
+        margin: 8px 0;
+        padding: 0 20px;
+        background: none;
+        color: #0bb399;
+        box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+    }
+    .navbar-menu_visible {
+        left: 0;
+    }
+    .img-grupo__b,
+    .img-grupo__c {
+        height: auto;
+        width: 100%;
+        max-width: 650px;
+        min-width: 250px;
+    }
+}
+

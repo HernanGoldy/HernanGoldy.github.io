@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Palanca</title>
+    <link rel="icon" href="img/logo-icon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tour.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Se agregan íconos de fuente externa -->
+    <script src="https://kit.fontawesome.com/07c62f8548.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="tour">
+    <!-- Header Start -->
+    <header>
+        <div class="logo-box">
+            <img class="logo-img" src="/img/logo.png" alt="Logo La Palanca">
+            <div class="logo-name">La Palanca</div>
+        </div>
+        <nav>
+            <ul class="navbar-menu">
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/index.html">INICIO</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/history.html">CERVECERÍA</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/products.html">NUESTRAS CERVEZAS</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link navbar-menu-link_active" href="/tour.html">DEGUSTACIONES</a></li>
+                <li class="navbar-menu-item"><a class="navbar-menu-link navbar-link" href="/visit.html">VISÍTENOS</a></li>
+            </ul>
+        </nav>
+        <button class="home-toggle">
+            <a href="/index.html"><i class="fas fa-home"></i></a>
+        </button>
+        <button class="history-toggle">
+            <a href="/history.html"><i class="fas fa-book"></i></a>
+        </button>
+        <button class="beer-toggle">
+            <a href="/products.html"><i class="fas fa-beer"></i></a>
+        </button>
+        <button class="tour-toggle navbar-menu-link_active">
+            <a href="/tour.html"><i class="fas fa-glass-cheers"></i></a>
+        </button>
+        <button class="visit-toggle">
+            <a href="/visit.html"><i class="fas fa-envelope-open-text"></i></a>
+        </button>
+        <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Main Start -->
+    <main>
+        <section class="invite">
+            <article>
+                <div>
+                    <h2>¿Te gustaría probar nuestras cervezas?</h2>
+                    <p class="invite-text">Periódicamente realizamos tours guiados por nuetra fábrica en la que te mostramos dónde y cómo se elaboran nuestros productos. <br> Además podrás degustar de todas las variedades de cervezas que fabricamos y con ello te invitamos a completar unos sencillos cuestionarios en los cuales (con tu colaboración) nos ayudas a mejorar la calidad y sabor de nuestras cervezas.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="tour-group">
+            <picture>
+                <img class="glass" src="img/tre_cups.jpg" alt="copas">
+            </picture>
+            <article class="tour-form">
+                <form action="formulario" class="formulario">
+                    <div class="formulario__grupo">
+                        <fieldset class="datos-persona">
+                            <legend>&ensp;Tus Datos Personales:&emsp;</legend>
+                            <input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
+                            <input type="text" name="apellido" placeholder="Apellido" class="input-48" required>
+                            <input type="number" name="edad" placeholder="Edad" min="18" max="99" class="input-48" required>
+                            <input type="tel" name="telefono" placeholder="Teléfono" class="input-48" required>
+                            <input type="email" name="correo" placeholder="Correo Electrónico" class="input-100" required>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-enviar">
+                </form>
+            </article>
+        </section>
+    </main>
+    <!-- Main End -->
+
+    
+    <br>
+
+
+    <!-- Footer Start -->
+    <footer class="footer_group">
+        <div class="footer_container">
+            <div class="columns_container">
+                <div class="column-1 all_networks">
+                    <p class="networks-info">Si deseas obtener más información sobre nuestros productos y servicios, puedes visitarnos o seguirnos en nuestras redes.</p>
+                    <ul class="networks-icons">
+                        <li class="column_item_1"><a href="#" title="Twitter"><i class="fa fa-twitter list-icons"></i></a></li>
+                        <li class="column_item_1"><a href="#" title="Telegram"><i class="fab fa-telegram-plane list-icons"></i></a></li>
+                        <li class="column_item_1"><a href="#" title="Facebook"><i class="fa fa-facebook list-icons"></i></a></li>
+                        <li class="column_item_1"><a href="#" title="Instagram"><i class="fa fa-instagram list-icons"></i></a></li>
+                        <li class="column_item_1"><a href="#" title="Pinterest"><i class="fa fa-pinterest list-icons"></i></a></li>
+                        <li class="column_item_1"><a href="#" title="Vimeo"><i class="fa fa-vimeo list-icons"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="column-2 all_hours">
+                    <h6 class="column_title">Horarios</h6>
+                    <ul>
+                        <li class="column_item_2"><i class="far fa-clock hour_icon"></i>&ensp;Lun. a Jue.<br>De 17:00 Hs. a 00:00 Hs.</li>
+                        <li class="column_item_2"><i class="far fa-clock hour_icon"></i>&ensp;Vie. a Dom. y Feriados<br>De 10:00 Hs. a 03:00 Hs.</li>
+                    </ul>
+                </div>
+
+                <div class="column-3 all_contacts">
+                    <h6 class="column_title">Encuéntranos</h6>
+                    <ul>
+                        <li class="column_item_3"><i class="fas fa-map-marker-alt list-icons"></i>&ensp; Armenia Nro. 1.733 - CABA</li>
+                        <li class="column_item_3"><i class="fas fa-phone list-icons"></i>&ensp;(+54) 9 11 2345-6789 / 9876</li>
+                        <li class="column_item_3"><i class="fab fa-whatsapp list-icons"></i>&ensp;(+54) 9 11 98765432</li>
+                        <li class="column_item_3"><i class="far fa-envelope list-icons"></i>&ensp;contacto@lapalanca.com</li>
+                    </ul>
+                </div>
+
+                <div class="column-4 all_news">
+                    <h6 class="column_title">Novedades</h6>
+                    <p class="news-info">Suscríbete a nuestro boletín para enterarte de las novedades y ofertas antes que nadie.</p>
+                    <div>
+                        <div>
+                            <input class="enter_email" type="email" placeholder="Ingresa tu correo electrónico">
+                            <div>
+                                <button class="button-email" id="button-email" type="submit">
+                                    <i class="fas fa-envelope list-icons icon-send"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyrights -->
+        <div class="copyright"  >
+            <div class="copyright_container">
+                <p>© 2021 La Palanca - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="js/navbar.js"></script>
+</body>
+</html>

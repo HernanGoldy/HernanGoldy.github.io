@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0; /* Recet. márgenes de toda la pág. a 0 */
+    box-sizing: border-box; /* Calcula auto// el paddin, margin y border */
+}
+
+.products {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    padding-bottom: 0;
+    transition: 0.5s;
+}
+header {
+    position: fixed;
+    z-index: 1;
+}
+main {
+    margin-top: 100px;
+}
+hr {
+    margin: 0 40px;
+}
+.animate__bounceInRight {
+    animation: backInRight;
+    animation-duration: 2s;
+}
+.product_start {
+    background: #B5EAEA;
+    text-align: center;
+    padding: 25px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+.product {
+    display: flex;
+    padding: 0;
+    margin: 0 30px;
+}
+.img-product {
+    height: 450px;
+    width: 450px;
+    margin-top: 40px;
+}
+.product-detail {
+    background: #CDF0EA;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.description {
+    color: #39A2DB;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;    
+}
+.product-name {
+    color: #185ADB;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+
+/* ---------- Mediaqueris tablets ---------- */
+@media (max-width: 1259px) {
+    .products {
+        margin-top: 80px;
+        padding: 0;
+    }
+    main {
+        margin-top: 80px;
+    }
+    .product_start {
+        margin-top: 0;
+    }
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .column-reverse {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .img-container {
+        text-align: center;
+    }
+}
+
+/* ---------- Animación del navbar para disp. móviles ---------- */
+@keyframes mover {
+    0% {
+        transform: translate(-100%);
+    }
+}

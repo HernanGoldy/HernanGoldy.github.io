@@ -1,0 +1,145 @@
+* {
+    margin: 0; /* Recet. márgenes de toda la pág. a 0 */
+    box-sizing: border-box; /* Calcula auto// el paddin, margin y border */
+}
+
+.visit {
+    font-family: 'Poppins', sans-serif;
+}
+.present__reserva {
+    margin: 0 45px;
+    padding: 30px;
+}
+hr {
+    margin: 0 30px;
+}
+main {
+    margin-top: 100px;
+}
+iframe {
+    margin-top: 130px;
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+}
+.iframe-container {
+    margin: 30px 30px;
+}
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+.titulo-reserva {
+    background: #76bdbd;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid #334756;
+}
+.formulario {
+    background: #B5EAEA;
+    width: 50%;
+    max-width: 750px;
+    min-width: 360px;
+    border-radius: 5px;
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+    text-align: center;
+}
+.formulario__grupo {
+    margin: auto;
+    padding: 20px;
+}
+.datos-persona,
+.datos-reserva {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+fieldset {
+    margin: 20px 0;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.input-48 {
+    width: 48%;
+}
+.input-100 {
+    width: 100%;;
+}
+.input-48,
+.input-100 {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.input-48:focus,
+.input-100:focus {
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+}
+textarea {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.btn-reservar {
+    background: #334756;
+    color: #D1CDC7;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 30px 30px;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-reservar:hover {
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+}
+
+
+/* ---------- Mediaqueris tablets ---------- */
+@media (max-width: 1259px) {
+    .visit {
+        margin-top: 80px;
+        padding: 0;
+        transition: 0.5s;
+    }
+    main {
+        margin-top: 80px;
+        transition: 0.5s;
+    }
+    .present__reserva {
+        margin-top: 0;
+    }
+    .datos-persona,
+    .datos-reserva {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 30px;
+    }
+    .input-48 {
+        width: 100%;
+    }
+    iframe {
+        width: 400px;
+    }
+    .iframe-container {
+        margin: 30px 100px;
+    }
+}
+
+
+/* ---------- Mediaqueris disp. móviles ---------- */
+@media (max-width: 412px) {
+    iframe {
+        width: 360px;
+    }
+}
+
